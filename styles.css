@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+svg {
+  width: 24px;
+}
+
+/* Header styles */
+header {
+  background-color: rgb(70, 202, 225);
+  margin: 24px;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0 30px 0 30px;
+    position: relative;
+    top: 60px;
+}
+
+img {
+  max-width: 500px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.066);
+  z-index: 2;
+}
+
+header article {
+  padding: 12px;
+  background-color: white;
+
+  align-self: center;
+  flex-shrink: 1;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.203);
+    z-index: 1;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+}
+
+header > svg {
+  width: 100%;
+  fill: white;
+    position: relative;
+    top: 10px;
+}
+
