@@ -3,10 +3,13 @@ body {
   flex-direction: column;
   max-width: 1000px;
   margin: 0 auto;
+  line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 svg {
   width: 24px;
+  margin: 5px;
 }
 
 /* Header styles */
@@ -25,14 +28,14 @@ header {
     top: 60px;
 }
 
-img {
+ img {
   max-width: 500px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.066);
   z-index: 2;
 }
 
 header article {
-  padding: 12px;
+  padding: 15px;
   background-color: white;
 
   align-self: center;
@@ -44,13 +47,50 @@ header article {
 .header-icons {
   display: flex;
   justify-content: end;
-  gap: 5px;
+  gap: 10px;
 }
 
 header > svg {
   width: 100%;
   fill: white;
     position: relative;
-    top: 10px;
+    top: 20px;
+    right: 5px;
 }
 
+/* Main styles */
+main,footer{
+    margin: 24px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.project{
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.203);
+}
+
+.project-pic{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(70, 202, 225);
+}
+
+.project-content{
+    padding: 10px;
+}
+
+.line1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-content p{
+    color: rgba(0, 0, 0, 0.631);
+}
